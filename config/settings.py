@@ -12,7 +12,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 ALLOWED_HOSTS = []
 
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -85,6 +84,7 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
+
 LANGUAGE_CODE = 'ru-ru'
 
 TIME_ZONE = "America/Adak"
@@ -92,6 +92,7 @@ USE_TZ = True
 
 USE_I18N = True
 
+AUTH_USER_MODEL = 'users.CustomUser'
 
 STATIC_URL = 'static/'
 
