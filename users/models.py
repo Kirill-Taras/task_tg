@@ -17,3 +17,9 @@ class CustomUser(AbstractUser):
     def __str__(self) -> str:
         # Отображение пользователя в админке и в строковом представлении
         return f"{self.username} ({self.telegram_id})"
+
+
+    class CustomUser(AbstractUser):
+        class Meta:
+            verbose_name = "Пользователь"
+            verbose_name_plural = "Пользователи"

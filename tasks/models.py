@@ -41,6 +41,11 @@ class Category(models.Model):
         # Для отображения в админке
         return self.name
 
+    class Category(models.Model):
+        class Meta:
+            verbose_name = "Категория"
+            verbose_name_plural = "Категории"
+
 
 class Task(models.Model):
     """
@@ -101,3 +106,7 @@ class Task(models.Model):
     def __str__(self) -> str:
         # Отображение в админке
         return f"{self.title} ({self.status})"
+
+    class Meta:
+        verbose_name = "Задача"
+        verbose_name_plural = "Задачи"
